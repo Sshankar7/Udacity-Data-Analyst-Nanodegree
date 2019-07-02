@@ -1,5 +1,5 @@
 # Udacity Data Analyst Nanodegree
-### Description
+
 
 | Term | Projects | Project Name |
 | ------------------ |:-------:| :---------------------:|
@@ -11,6 +11,8 @@
 | Term II   | Project 6 | [Exploratory Data Analysis using R : Dataset - Red Wine Quality]()|
 | Term II   | Project 7 | [Wrangle And Analyze Data]()|
 | Term II   | Project 8 | [Tableau Story using Flights Delay Dataset]()|
+
+## Descriptions
 
 ### Project 1: Explore Weather Trends - Project Instructions
 
