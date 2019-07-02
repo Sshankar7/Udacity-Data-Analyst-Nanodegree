@@ -28,6 +28,8 @@ In this project, use Python to explore data related to bike share systems for th
 
 In this project, conduct your own data analysis and create a file to share that documents your findings. You should start by taking a look at your dataset and brainstorming what questions you could answer using it. Then you should use pandas and NumPy to answer the questions you are most interested in, and create a report sharing the answers. You will not be required to use inferential statistics or machine learning to complete this project, but you should make it clear in your communications that your findings are tentative. This project is open-ended in that we are not looking for one right answer. 
 
+[Jupyter Notebook]()
+
 #### Dataset used: No-Show Appointments
 
 In this project we have analyzed the data associated with the medical appointments in Brazil and the focus is on question whether or not patients show up for their appointments. Also, we were interested in finding the factors that were important for us to know in order to predict if a patient will show up for their scheduled appointment.
@@ -63,7 +65,7 @@ In this project, the tasks are as follows:
 * Storing, analyzing, and visualizing your wrangled data
 * Reporting on 1) your data wrangling efforts and 2) your data analyses and visualizations
 
-[Wrangling Report]()
+[Wrangling Report]() <br/>
 [Analysis Report]()
 
 ### Project 8: Tableau Story using Flights Delay Dataset - Project Instructions
