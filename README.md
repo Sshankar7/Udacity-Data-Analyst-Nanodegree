@@ -65,7 +65,7 @@ In this project, the tasks are as follows:
 * Storing, analyzing, and visualizing your wrangled data
 * Reporting on 1) your data wrangling efforts and 2) your data analyses and visualizations
 
-[Wrangling Report]() <br/>
+[Wrangling Report]() <br  />
 [Analysis Report]()
 
 ### Project 8: Tableau Story using Flights Delay Dataset - Project Instructions
