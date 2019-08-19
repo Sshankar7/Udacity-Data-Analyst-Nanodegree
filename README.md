@@ -34,7 +34,7 @@ In this project, conduct your own data analysis and create a file to share that 
 
 In this project we have analyzed the data associated with the medical appointments in Brazil and the focus is on question whether or not patients show up for their appointments. Also, we were interested in finding the factors that were important for us to know in order to predict if a patient will show up for their scheduled appointment.
 
-[Jupyter Notebook](https://github.com/Sshankar7/Udacity-Data-Analyst-Nanodegree/blob/master/Project_3/DAND-P3-NO-APPOINTMENT.ipynb)
+[Jupyter Notebook](https://github.com/Sshankar7/Udacity-Data-Analyst-Nanodegree/blob/master/Project_3/NoShowAppointment_v2.ipynb)
 
 ### Project 4: Analyze A/B Test Results - Project Instructions
 
