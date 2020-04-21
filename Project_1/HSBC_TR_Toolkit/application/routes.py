@@ -147,7 +147,7 @@ def progress():
         query = "SELECT current_count, total_fn_count, status from script_progress WHERE script_id = ?"
         time.sleep(1)
         rv = modals.query_db(query, [1], one=True)
-        if (rv is not None) and (rv[2] != 'completed'):
+        if (rv is not None):
             while x <= rv[1]:
                 query = "SELECT current_count, total_fn_count from script_progress WHERE script_id = ?"
                 rv = modals.query_db(query, [1], one=True)
