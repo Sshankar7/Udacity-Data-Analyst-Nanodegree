@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block pluginscss %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/plugins/bootstrap-datepicker3.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/plugins/select2.min.css') }}">
+{% endblock %}
+
+{% block main %}
+<!-- Main Container -->
+<main id="main-container">
+
+    <!-- Header -->
+    <div class="bg-primary-dark">
+        <div class="content content-top">
+            <div class="row push">
+                <div class="col-md py-10 d-md-flex align-items-md-center text-center">
+                    <h1 class="text-white mb-0">
+                        <span class="font-w300">Dashboard</span>
+                        <span class="font-w400 font-size-lg text-white-op d-none d-md-inline-block">Welcome Admin</span>
+                    </h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- END Header -->
+
+    <!-- Page Content -->
+    <div class="bg-white">
+        <!-- Breadcrumb -->
+        <div class="content">
+            <nav class="breadcrumb mb-0">
+                <a class="breadcrumb-item" href="javascript:void(0)">Home</a>
+                <span class="breadcrumb-item active">Dashboard</span>
+            </nav>
+        </div>
+        <!-- END Breadcrumb -->
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Icon Navigation -->
+            <div class="row gutters-tiny">
+                <div class="col-6 col-md-4 col-xl-2" >
+                    <a class="block block-link-pop text-center" type="button" onclick="blockToggle('#select-paths','#mi-info #start #export-reports #select-regions #export-pdf-reports');">
+                        <div class="block-content">
+                            <p class="mt-5">
+                                <i class="fa fa-folder-open-o fa-4x"></i>
+                            </p>
+                            <p class="font-w600">Select Paths</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <a class="block block-link-pop text-center" type="button" onclick="blockToggle('#mi-info','#select-paths #start #export-reports #select-regions #export-pdf-reports');">
+                        <div class="block-content">
+                            <p class="mt-5">
+                                <i class="fa fa-calendar-o fa-4x text-success"></i>
+                            </p>
+                            <p class="font-w600">MI Info</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <a class="block block-link-pop text-center" type="button" onclick="blockToggle('#start','#select-paths #mi-info #export-reports #select-regions #export-pdf-reports');">
+                        <div class="block-content">
+                            <p class="mt-5">
+                                <i class="fa fa-play fa-4x text-danger"></i>
+                            </p>
+                            <p class="font-w600">Start</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <a class="block block-link-pop text-center" type="button" onclick="blockToggle('#export-reports','#select-paths #mi-info #start #select-regions #export-pdf-reports');">
+                        <div class="block-content">
+                            <p class="mt-5">
+                                <i class="fa fa-file-excel-o fa-4x text-corporate"></i>
+                            </p>
+                            <p class="font-w600">Export Excel Reports</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <a class="block block-link-pop text-center" type="button" onclick="blockToggle('#select-regions','#select-paths #mi-info #start #export-reports #export-pdf-reports');">
+                        <div class="block-content">
+                            <p class="mt-5">
+                                <i class="fa fa-globe fa-4x text-earth"></i>
+                            </p>
+                            <p class="font-w600">Excel EUC</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-xl-2">
+                    <a class="block block-link-pop text-center" type="button" onclick="blockToggle('#export-pdf-reports','#select-paths #mi-info #start #export-reports #select-regions');">
+                        <div class="block-content">
+                            <p class="mt-5">
+                                <i class="fa fa-envelope-o fa-4x text-warning"></i>
+                            </p>
+                            <p class="font-w600">Email EUC</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        <!-- END Content -->
+        
+        {% include "includes/dash_blocks/1_select-paths.html" %}
+        {% include "includes/dash_blocks/2_mi-info.html" %}
+        {% include "includes/dash_blocks/3_start.html" %}
+        {% include "includes/dash_blocks/4_exp_excel_rep.html" %}
+        {% include "includes/dash_blocks/5_excel-euc.html" %}
+        {% include "includes/dash_blocks/6_email-euc.html" %}
+
+    </div>
+    <!-- END Page Content -->
+
+</main>
+<!-- END Main Container -->
+{% endblock %}
+
+{% block jsplugins %}
+    <!-- Page JS Plugins -->
+    <script src="{{ url_for('static', filename='js/plugins/bootstrap-datepicker.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins/select2.full.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins/bootstrap-notify.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins/jquery.validate.min.js') }}"></script>
+    <!-- Page JS Helpers (Flatpickr + BS Datepicker + BS Colorpicker + BS Maxlength + Select2 + Masked Input + Range Sliders + Tags Inputs plugins) -->
+    <script>jQuery(function(){ Codebase.helpers(['datepicker','select2']); });</script>
+    <script src="{{ url_for('static', filename='js/blocks_script.js') }}"></script>
+{% endblock %}

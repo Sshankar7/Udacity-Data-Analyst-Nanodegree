@@ -1,0 +1,39 @@
+<!-- Horizontal Form Excel EUC-->
+<div class="block block-themed d-none" id="select-regions">
+    <div class="block-header bg-primary-dark">
+        <h3 class="block-title">Excel EUC</h3>
+    </div>
+    <div class="block-content">
+        <form id="excel_euc_form" method="post">
+            <div class="form-group row">
+                <label class="col-lg-4 col-form-label" for="sel-regions-multiple">Select Regions</label>
+                <div class="col-lg-8">
+                    <select class="js-select2 form-control" id="sel-regions-multiple" name="sel-regions-multiple" style="width: 100%;" data-placeholder="Choose..." multiple>
+                        <option></option><!-- Required for data-placeholder attribute to work with Select2 plugin -->
+                        {% for region in regions_list['Regions'] %}
+                        <option value="{{ region }}">{{ region }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-lg-8 ml-auto">
+                    <button id="gen_exl_rep_btn" type="submit" class="btn btn-success" data-toggle="click-ripple">
+                        <i class="fa fa-file-excel-o"></i> Generate Excel Reports
+                    </button>
+                    <button id="fill_prev_roles_btn" type="submit" class="btn btn-warning" data-toggle="click-ripple">
+                        <i class="fa fa-list-ul"></i> Fill Previous Roles
+                    </button>
+                    <button id="gen_pdf_btn" type="submit" class="btn btn-danger" data-toggle="click-ripple">
+                        <i class="fa fa-file-pdf-o"></i> Generate PDFs
+                    </button>
+                    <button id="exp_shared_drive_btn" type="submit" class="btn btn-info" data-toggle="click-ripple">
+                        <i class="fa fa-share-square-o"></i> Export to Shared Drive
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- END Horizontal Form Excel EUC-->

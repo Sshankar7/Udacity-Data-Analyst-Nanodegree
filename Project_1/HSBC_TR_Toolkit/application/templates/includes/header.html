@@ -1,0 +1,51 @@
+<!-- Header -->
+<header id="page-header">
+    <!-- Header Content -->
+    <div class="content-header">
+        <!-- Left Section -->
+        <div class="content-header-section">
+            <!-- Logo -->
+            <div class="content-header-item mr-5">
+                <a class="" href="{{ url_for('dashboard') }}" style="font-size: 1.5em;font-weight: bold;">
+                    <img style="margin-top:-6px;" src="{{ url_for('static', filename='media/logo/Logo_HSBC.png') }}" />
+                    <span class="text-primary">TR Toolkit</span>
+                </a>
+            </div>
+            <!-- END Logo -->
+            
+
+        </div>
+        <!-- END Left Section -->
+
+        <!-- Right Section -->
+        <div class="content-header-section">
+            <!-- Header Navigation -->
+            <ul class="nav-main-header">
+                <li>
+                    <a class="{% if dashboard %}active{% endif %}" href="{{ url_for('dashboard') }}"><i class="fa fa-rocket"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-gear"></i>Settings</a>
+                    <ul>
+                        <li>
+                            <a href="{{ url_for('logout') }}">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- END Header Navigation -->
+
+            <!-- Toggle Sidebar -->
+            <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none" data-toggle="layout" data-action="sidebar_toggle">
+                <i class="fa fa-navicon"></i>
+            </button>
+            <!-- END Toggle Sidebar -->
+        </div>
+        <!-- END Right Section -->
+    </div>
+    <!-- END Header Content -->
+
+
+    
+</header>
+<!-- END Header -->

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block title %}Login{% endblock %}
+
+{% block main %}
+<!-- Main Container -->
+<main id="main-container">
+
+    <!-- Page Content -->
+    <div class="bg-image" style="background-image: url('static/media/photo27@2x.jpg');">
+        <div class="row mx-0 bg-black-op">
+            <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
+                <div class="p-30 invisible" data-toggle="appear">
+                    <p class="font-size-h3 font-w600 text-white">
+                        Together we thrive
+                    </p>
+                    <p class="font-italic text-white-op">
+                        Copyright &copy; <span class="js-year-copy"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="hero-static col-md-6 col-xl-4 d-flex align-items-center bg-white text-center">
+                <div class="content content-full">
+                    <!-- Header -->
+                    <div class="px-30 pt-10 pb-30">
+                        <a class="" href="" style="font-size: 1.55em;font-weight: bold;color:black;">
+                            <img style="margin-top:-5px;" src="{{ url_for('static', filename='media/logo/Logo_HSBC_2.png') }}" />
+                            <span >TR Toolkit</span>
+                        </a>
+                        <h1 class="h3 font-w700 mt-30 mb-10">Welcome, Admin</h1>
+                        <img class="img-avatar img-avatar96" src="{{ url_for('static', filename='media/user.png') }}" alt="">
+                    </div>
+                    <!-- END Header -->
+
+                    <!-- Unlock Form -->
+                    <!-- jQuery Validation functionality is initialized with .js-validation-lock class in js/pages/op_auth_lock.min.js which was auto compiled from _es6/pages/op_auth_lock.js -->
+                    <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
+                    <a class="px-30" href="{{ url_for('dashboard') }}" >
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-sm btn-hero btn-danger" data-toggle="click-ripple">
+                                <i class="fa fa-sign-in mr-10"></i> Login
+                            </button>
+                        </div>
+                    </a>
+                    <!-- END Unlock Form -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Page Content -->
+
+</main>
+<!-- END Main Container -->
+{% endblock %}

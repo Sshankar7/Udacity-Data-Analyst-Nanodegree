@@ -1,0 +1,47 @@
+<!-- Horizontal Form Email EUC-->
+<div class="block block-themed d-none" id="export-pdf-reports">
+    <div class="block-header bg-primary-dark">
+        <h3 class="block-title">Email EUC</h3>
+    </div>
+    <div class="block-content">
+        <form id="email_euc_form" action="" method="post" onsubmit="return false;">
+            <div class="form-group row">
+                <label class="col-lg-3 col-form-label" for="pdf-path">PDF Path</label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control" id="pdf-path" name="pdf-path" placeholder="PDF Path">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-lg-3 col-form-label">Copy File</label>
+                <div class="col-lg-7">
+                    <div class="custom-control custom-radio custom-control-inline mb-5">
+                        <input class="custom-control-input" type="radio" name="copy-file" id="copy-file1" value="STRG">
+                        <label class="custom-control-label" for="copy-file1">STRG</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline mb-5">
+                        <input class="custom-control-input" type="radio" name="copy-file" id="copy-file2" value="NON-STRG">
+                        <label class="custom-control-label" for="copy-file2">NON-STRG</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-lg-3 col-form-label" for="excel-path">Excel File Path</label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control" id="excel-path" name="excel-path" placeholder="Excel File Path">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-lg-8 ml-auto">
+                    <button type="submit" class="btn btn-info" data-toggle="click-ripple">
+                        <i class="fa fa-save"></i> Save Data
+                    </button>
+                    <button type="submit" class="btn btn-success" data-toggle="click-ripple">
+                        <i class="fa fa-envelope-open-o"></i> Generate Email
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- END Horizontal Form Email EUC-->
